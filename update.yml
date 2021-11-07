@@ -1,7 +1,7 @@
 ---
 - name: Update and reboot
   # note: This host pattern is for the test only
-  hosts: RedHatTest
+  hosts: TestServers
   gather_facts: no
   tasks:
     - name: Upgrade all packages
