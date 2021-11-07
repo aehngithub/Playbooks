@@ -1,7 +1,7 @@
 ---
 - name: Install Security Updates
   # note: This is for the test group only
-  hosts: TestServers
+  hosts: RedHat_Test_Servers
   gather_facts: no
   tasks:
     - name: Upgrade all packages
