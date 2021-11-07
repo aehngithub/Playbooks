@@ -1,6 +1,6 @@
 ---
 - name: Update and reboot
-  # note: your 'hosts' section will likely be different as this is a group I created for my Red Hat hosts in Ansible Tower itself.
+  # note: This host pattern is for the test only
   hosts: RedHat_Test_Servers
   gather_facts: no
   tasks:
