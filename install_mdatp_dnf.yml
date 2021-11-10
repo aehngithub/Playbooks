@@ -1,4 +1,4 @@
-hosts: TestServers
+hosts: RedHatTest
   tasks:
     - include: ../roles/onboarding_setup.yml
     - include: ../roles/add_yum_repo.yml
