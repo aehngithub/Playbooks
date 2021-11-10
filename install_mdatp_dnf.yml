@@ -1,0 +1,9 @@
+hosts: TestServers
+  tasks:
+    - include: ../roles/onboarding_setup.yml
+    - include: ../roles/add_yum_repo.yml
+    - name: Install MDATP
+      dnf:
+        name: mdatp
+        state: latest
+        enablerepo: packages-microsoft-com-prod-[channel]
