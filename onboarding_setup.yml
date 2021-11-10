@@ -1,6 +1,6 @@
 - name: Create MDATP directories
   file:
-    path: /etc/ansible/microsoft/mdatp/
+    path: /etc/opt/microsoft/mdatp/
     recurse: true
     state: directory
     mode: 0755
@@ -9,7 +9,7 @@
 
 - name: Register mdatp_onboard.json
   stat:
-    path: /etc/ansible/microsoft/mdatp/mdatp_onboard.json
+    path: /etc/opt/microsoft/mdatp/mdatp_onboard.json
   register: mdatp_onboard
 
 - name: Extract WindowsDefenderATPOnboardingPackage.zip into /etc/opt/microsoft/mdatp
