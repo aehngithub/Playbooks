@@ -1,5 +1,5 @@
 ---
-- name: Install Security Updates
+- name: Install RedHat Security Updates
   # note: This is for the test group only
   hosts: all
   gather_facts: no
